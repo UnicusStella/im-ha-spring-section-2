@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function MovieRankListEntry({
-  movie,
   handleCardClick,
+  movie,
   movie: { runtime, rating, title, medium_corver_image, genres },
 }) {
   return (

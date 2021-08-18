@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function CurrentMovie({ movie }) {
   if (!movie) return '영화를 선택하세요';
+
   const { description_full, runtime, rating, title, medium_cover_image } =
     movie;
   return (

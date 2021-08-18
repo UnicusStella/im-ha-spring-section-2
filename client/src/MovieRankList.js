@@ -5,13 +5,15 @@ export default function MovieRankList({ movies, handleCardClick }) {
     <div className="right-movie-list">
       {movies.length === 0
         ? '영화 목록이 비었습니다'
-        : movies.map((movie) => (
-            <MovieRankListEntry
-              handleCardClick={handleCardClick}
-              movie={movie}
-              key={movie.id}
-            />
-          ))}
+        : movies.map((movie) => {
+            return (
+              <MovieRankListEntry
+                handleCardClick={handleCardClick}
+                movie={movie}
+                key={movie.id}
+              />
+            );
+          })}
 
       {/*
         TODO : props로 받아온 영화정보의 갯수 만큼 MovieRankListEntry를 렌더링합니다.

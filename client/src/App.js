@@ -22,6 +22,7 @@ export const App = () => {
     setThisMovies(movie);
   };
 
+  if (!movies) return <div>loading ...</div>;
   global.handleCardClick = handleCardClick; // 이 코드는 테스트를 위한 코드입니다. 실행에는 지장이 없지만, 지우면 테스트를 통과하지 않을 수 있습니다.
 
   return (
