@@ -13,7 +13,7 @@ export default function CurrentMovie({ movie }) {
           <img className="thumbnail" src={medium_cover_image} alt="thumbnail" />
           <p className="rating">rating : {rating}</p>
           <p className="running-time">runtime : {runtime}</p>
-          <p>description</p>
+          <p>Description</p>
           <p className="description">{description_full}</p>
         </div>
       </div>
