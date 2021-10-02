@@ -3,7 +3,7 @@ import MovieRankListEntry from './MovieRankListEntry';
 export default function MovieRankList({ movies, handleCardClick }) {
   return (
     <div className="right-movie-list">
-      {movies.length === 0
+      {!movies.length
         ? '영화 목록이 비었습니다'
         : movies.map((movie) => {
             return (
